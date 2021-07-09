@@ -28,7 +28,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 
 export function multiply(a, b) {
     let num = a * b;
-    let str = 'The product of 5 and 9 is 45.';
+    let str = `The product of ${a} and ${b} is ${num}.`;
     return [num, str];
 }
 
