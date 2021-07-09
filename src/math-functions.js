@@ -12,7 +12,7 @@ example and uses the values that were input into the function:
 */
 export function sum(a, b) {
     let num = a + b;
-    let str = 'The sum of 4 and 7 is 11.';
+    let str = `The sum of ${a} and ${b} is ${num}.`;
     return [num, str];
 }
 
