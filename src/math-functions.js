@@ -109,10 +109,13 @@ you may continue to use the + operator for string concatenation.
 */
 
 export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
-
+    let num = multiply(multArr[0], multArr[1]);
+    let totalMul = multiply(num[0], multArr[2]);
+    return [totalMul[0], `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${totalMul[0]}.`];
 }
-
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
+    
+    
+    // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
