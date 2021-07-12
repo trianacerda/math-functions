@@ -133,11 +133,12 @@ This function should be dynamic, accepting an array of any length.
 */
 
 export function multiplyAnyArray(dynamicArray) { 
-    let num = multiply(dynamicArray[0], dynamicArray[1]);
-    let num1 = multiply (dynamicArray[2], dynamicArray[3]);
-    let num2 = multiply (num[0], num1[0]);
-    let totalMul = multiply(num2[0], dynamicArray[4],);
-    return [totalMul[0], `The numbers ${dynamicArray[0]},${dynamicArray[1]},${dynamicArray[2]},${dynamicArray[3]},${dynamicArray[4]} have a product of ${totalMul[0]}.`];
+    let dynamicArrMul = 1;
+
+    for(let product of dynamicArray) {
+        dynamicArrMul = multiply(dynamicArrMul, product)[0];
+    }
+    return [dynamicArrMul, `The numbers ${dynamicArray} have a product of ${dynamicArrMul}.`];
     
 }
 
